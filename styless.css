@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: 3px;
+}
+
+body {
+    padding-bottom: 10rem;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7b1113;
+    border-radius: 20px;
+}
+
+#top {
+    padding: 40px 20px;
+    height: 20px;
+    background-color: #7b1113;
+    box-shadow: 0px 10px 30px;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-top: -80px;
+    margin-left: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px;
+}
+
+h2 {
+    color: #7b1113;
+}
+
+#display_image {
+    width: 144px;
+    height: 144px;
+    margin-top: -100px;
+    margin-left: 20rem;
+    box-shadow: 0px 10px 30px;
+    transition: transform 0.5s ease;
+}
+
+#display_image:hover {
+    transform: scale(1.05) translateY(0px);
+}
+
+.mainBody {
+    width: 75rem;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 55rem;
+    box-shadow: 0px 10px 30px;
+    padding: 40px;
+    background-color: white;
+}
+
+.sheet {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.user {
+    width: 280px;
+    padding: 25px;
+    height: 30rem;
+}
+
+.enrolled {
+    width: 280px;
+    padding: 25px;
+    height: 30rem;
+}
+
+.moreInfo {
+    width: 280px;
+    padding: 25px;
+    height: 30rem;
+}
+
+.user,
+.enrolled,
+.moreInfo {
+    box-shadow: 5px 5px 50px;
+    width: 280px;
+    padding: 25px;
+    height: 30rem;
+    transition: transform 0.5s ease;
+}
+
+.user:hover,
+.enrolled:hover,
+.moreInfo:hover {
+    transform: scale(1.05) translateY(0px);
+}
+
+#homePage {
+    float: right;
+    margin-top: 100px;
+    background-color: #7b1113;
+    color: bisque;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#homePage:hover {
+    transform: translate(1px, -1px) scale(1.10); 
+}
+
+p {
+    padding-top: 50px;
+    position: absolute;
+    color: #7b1113;
+}
+
+
+
+
+

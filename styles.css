@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: 3px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7b1113;
+    border-radius: 20px;
+}
+
+body {
+    padding-bottom: 10rem;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*Header*/
+
+.top  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header {
+    padding: 40px 20px;
+    height: 20px;
+    background-color: #7b1113;
+    box-shadow: 0px 10px 30px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    color: bisque;
+    position: absolute;
+    display: flex;
+    margin-left: 60rem;
+    margin-top: -5px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 50px;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+    position: relative; 
+}
+
+li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px;
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+}
+
+li a:hover::after {
+    background-color: bisque; 
+}
+.button {
+    margin-top: -10px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: bisque; 
+    color: #7b1113; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+}
+
+.button:hover {
+    background-color: #ffff; 
+}
+
+#logo img {
+    width: 150px;
+    height: 150px;
+    margin-top: -80px;
+    margin-left: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px;
+    z-index: 100;
+}
+
+/*End of Header*/
+
+/*Start of Greetings*/
+
+.Welcome {
+    margin-left: 250px;
+    margin-top: 200px;
+}
+
+.school {
+    font-size: 30px;
+}
+
+.greet {
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.dialog {
+    margin-top: 10px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+/* End of Greetings*/
+
+/* Footer of 1st part */
+
+.Mission {
+    margin-top: 230px;
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: #7b1113;
+    box-shadow: -10px -10px 30px;
+}
+
+.Mission h1 {
+    color: bisque;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 20px;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.miss {
+    color: bisque;
+    width: 86rem;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+/* About */
+
+.About {
+    padding-top: 250px;
+    margin-left: 100px;
+    margin-top: px;
+    margin-bottom: 100px;
+    width: 100rem;
+}
+
+.About h1 {
+    font-size: 35px;
+    position: relative;
+}
+
+.about {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/*Bidlisiw*/
+
+#bidlisiw {
+    margin-top: 125px;
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    background-color: #7b1113;
+    box-shadow: -10px -10px 30px
+}
+
+
+.bid  {
+    color: bisque;
+    font-size: 35px;
+    position: absolute;
+    margin-top: 40px;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+
+
+#description {
+    color: bisque;
+    width: 94rem;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+}
+
+.sector {
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    background-color: maroon;
+}
+
+.box {
+    box-shadow: -10px -10px 30px;
+    height: 600px;
+    padding: 40px;
+    background-color: bisque;
+    flex: 1;
+    transition: 1.5s;
+    position: relative; 
+    text-align: center;
+}
+
+.box h1 {
+    color: #7b1113;
+}
+
+.box h1,
+.box h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 1s transform 0s;
+}
+
+.box h2 {
+    top: 60%; 
+}
+
+.box p {
+    display: none;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    padding: 40px; 
+    box-sizing: border-box; 
+}
+
+.box:hover {
+    flex: 3;
+}
+
+.box:hover h1,
+.box:hover h2 {
+    top: 200px;
+    transition: 1s;
+    transform: none;
+    transform: translate(-50%, 0);
+}
+
+.box:hover h2 {
+    top: 250px;
+}
+
+.box:hover p {
+    display: block; 
+}
+
+/*Vision*/
+
+#Vision {
+    padding: 40px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #7b1113;
+    box-shadow: -10px -10px 30px
+}
+
+#Vision h1 {
+    font-size: 40px;
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: bisque;
+}
+
+.visionDes {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80rem;
+    position: absolute;
+    top: 35%;
+    left: 17%;
+    color: bisque;
+}
+
+#blank {
+    margin-top: 360px;
+}
+
+/*Admissions*/
+
+.admin {
+    margin-top: 450px;
+    padding: 100px;
+}
+
+.admin h1 {
+    font-size: 35px;
+}
+
+#adminDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px; 
+}
+
+.playG p {
+    font-size: 20px;
+}
+
+.gradeOne p {
+    font-size: 20px;
+}
+
+.gradeTwo p {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.gradeTwo h1 {
+    margin-left: 30px;
+}
+
+.gradeEleven p {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.gradeEleven h1 {
+    margin-left: 30px;
+}
+
+/*Footer*/
+
+#contact {
+    padding: 50px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background-color: #7b1113;
+    box-shadow: -10px -10px 30px
+}
+
+#contsDetails {
+    color: bisque;
+    width: 50em;
+}
+
+.fb  {
+    position: absolute;
+    font-size: 18px;
+    margin-top: -200px;
+    margin-left: 900px;
+    color: bisque;
+}
+
+i {
+    font-size: 100px;
+    color: bisque;
+}

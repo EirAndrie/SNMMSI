@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> SNMMSI-REGISTER </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="./Images/favicon.ico" type="image/x-icon">
+    </head>
+
+<body>
+
+<header id="top"></header>
+
+<div class="logo">
+    <img src="./Images/20240313_232007.png" id="logo">
+</div>
+
+<div class="statement">
+    <h3>WELCOME TO SNMMSI</h3><br>
+    <p1>
+    Where your family becomes ours. We understand the importance of your child's education and are committed to providing a nurturing environment that fosters growth and development.<br><br>
+    Together, we pave the way for a bright and successful future for your child."
+    </p1>
+</div>
+
+    <form id="form">
+
+        <h1>Enroll Now!</h1><br><br>
+        <p>Register to create your profile and be updated to future announcements, It takes <br> less than a minute. If you already have an account click <a href="#">log-in.</a></p><br><br>
+
+        <input type="text" id="firstname" placeholder="First Name" required/>
+        <input type="text" id="middlename" placeholder="Middle Name" required/><br><br>
+        <input type="text" id="surname" placeholder="Family Name" required/>
+        
+        <label for="sex">Gender:</label>
+        <input type="radio" id="male" name="gender" value="MALE" required>Male
+        <input type="radio" id="female" name="gender" value="FEMALE" required>Female
+        <br>
+
+        <label for="birthday">Date of Birth</label>
+        <input type="date" id="birthday"/><br><br>
+
+
+        <input type="text" id="address" placeholder="Address" required/><br><br>
+
+        <div class="container">
+            <div class="yearLevelContainer">
+                <label for="lvl">Select Year Level</label><br>
+                <div class="yearLevel">
+                    <select id="year-Level" required>
+                        <option value="NURSERY">NURSERY</option>
+                        <option value="KINDER 1">KINDER 1</option>
+                        <option value="KINDER 2">KINDER 2</option>
+                        <option value="GRADE 1">GRADE 1</option>
+                        <option value="GRADE 2">GRADE 2</option>
+                        <option value="GRADE 3">GRADE 3</option>
+                        <option value="GRADE 4">GRADE 4</option>
+                        <option value="GRADE 5">GRADE 5</option>
+                        <option value="GRADE 6">GRADE 6</option>
+                        <option value="GRADE 7">GRADE 7</option>
+                        <option value="GRADE 8">GRADE 8</option>
+                        <option value="GRADE 9">GRADE 9</option>
+                        <option value="GRADE 10">GRADE 10</option>
+                        <option value="GRADE 11">GRADE 11</option>
+                        <option value="GRADE 12">GRADE 12</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div class="Strand">
+                <label for="sTrand">If SHS please Select Track</label><br>
+                <div class="strand">
+                    <select id="academic-Strand" required>
+                        <option value="STEM">STEM</option>
+                        <option value="HUMSS">HUMSS</option>
+                        <option value="ABM">ABM</option>
+                        <option value="ARTS & DESIGN">ARTS & DESIGN</option>
+                        <option value="TVL ICT">TVL ICT</option>
+                        <option value="TVL HE">TVL HE</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    <div class="moreInfo">
+
+        <input type="email" id="emailadd" placeholder="Email Address" required/>
+        <input type="password" id="password" placeholder="Password" required/><br><br>
+
+        <input type="text" id="phone" placeholder="Phone-Number" required/>
+        <input type="text" id="lrn" placeholder="LRN No." required/><br><br>
+
+        <input type="text" id="Nationality" placeholder="Nationality" required/>
+        <input type="text" id="Religion" placeholder="Religion" required/><br><br>
+
+        <input type="ethnicity" id="Ethnicity" placeholder="Ethnicity" required/>
+        <input type="text" id="nativeLanguage" placeholder="Native Language" required/><br><br>
+
+    </div>
+
+        <p id="instructions">Please attach your 2x2 picture with white background:</p>
+
+        <div id="display_image"></div>
+
+        <div class="custom-file-upload">
+            <input type="file" id="image" accept="img/png, img/jpg, img/jpeg" required>
+            <label for="image" class="custom-file-button">Choose Image</label>
+        </div>
+    
+        <button onclick="showAlert()">SUBMIT</button>
+        <div class="custom-alert" id="customAlert" style="display: none;">
+            <div class="alert-content">
+                <span class="close-btn" onclick="hideAlert()">&times;</span>
+                <h2>NOTICE!</h2>
+                <p class="mess">This is a custom alert message.</p>
+                <button onclick="hideAlert(); redirectToPage2();">OK</button>
+            </div>
+        </div>
+        
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

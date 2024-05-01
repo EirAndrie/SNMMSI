@@ -32,7 +32,7 @@ document.getElementById('ethnicity').textContent = ethnicity;
 document.getElementById('native-lang').textContent = NativeLanguage;
 
 document.addEventListener("DOMContentLoaded", function() {
-    const uploaded_image = localStorage.getItem("uploadedImage"); // Retrieve image URL from localStorage
+    const uploaded_image = localStorage.getItem("uploadedImage");
     if (uploaded_image) {
       const img = new Image();
       img.src = uploaded_image;

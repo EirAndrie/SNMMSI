@@ -245,6 +245,7 @@ li a:hover::after {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: top 1s transform 0s;
+    transition: top 1s, transform 1s;
 }
 
 .box h2 {
@@ -264,7 +265,7 @@ li a:hover::after {
 }
 
 .box:hover {
-    flex: 3;
+    flex: 2.5;
 }
 
 .box:hover h1,
@@ -273,6 +274,7 @@ li a:hover::after {
     transition: 1s;
     transform: none;
     transform: translate(-50%, 0);
+    transition: top 1s, transform 1s;
 }
 
 .box:hover h2 {
@@ -282,6 +284,8 @@ li a:hover::after {
 .box:hover p {
     display: block; 
 }
+
+
 
 /*Vision*/
 

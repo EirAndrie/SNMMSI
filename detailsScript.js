@@ -31,26 +31,3 @@ document.getElementById('religion').textContent = religion;
 document.getElementById('ethnicity').textContent = ethnicity;
 document.getElementById('native-lang').textContent = NativeLanguage;
 
-document.addEventListener("DOMContentLoaded", function() {
-    const uploaded_image = localStorage.getItem("uploadedImage");
-    if (uploaded_image) {
-      const img = new Image();
-      img.src = uploaded_image;
-
-      img.onload = function() {
-        const canvas = document.createElement('canvas');
-        const ctx = canvas.getContext('2d');
-
-        canvas.width = 144;
-        canvas.height = 144;
-
-        ctx.drawImage(img, 0, 0, 144, 144);
-
-        const resizedImageURL = canvas.toDataURL('image/jpeg', 0.7);
-
-        document.querySelector("#display_image").style.backgroundImage = `url(${resizedImageURL})`;
-      };
-    } else {
-      document.querySelector("#display_image").textContent = "No image uploaded.";
-    }
-  });

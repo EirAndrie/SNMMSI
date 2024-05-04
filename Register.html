@@ -100,15 +100,8 @@
         <input type="text" id="nativeLanguage" placeholder="Native Language" required/><br><br>
 
     </div>
-
-        <p id="instructions">Please attach your 2x2 picture with white background:</p>
-
+    
         <div id="display_image"></div>
-
-        <div class="custom-file-upload">
-            <input type="file" id="image" accept="img/png, img/jpg, img/jpeg" required>
-            <label for="image" class="custom-file-button">Choose Image</label>
-        </div>
     
         <button onclick="showAlert()">SUBMIT</button>
         <div class="custom-alert" id="customAlert" style="display: none;">
@@ -116,7 +109,7 @@
                 <span class="close-btn" onclick="hideAlert()">&times;</span>
                 <h2>NOTICE!</h2>
                 <p class="mess">This is a custom alert message.</p>
-                <button onclick="hideAlert(); redirectToPage2();">OK</button>
+                <button onclick="hideAlert();">OK</button>
             </div>
         </div>
         

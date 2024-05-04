@@ -139,10 +139,6 @@ input[value=Register] {
     color: white;
 }
 
-#instructions {
-    margin-top: 10px;
-}
-
 .custom-file-upload {
     position: relative;
     margin-left: 450px;
@@ -165,15 +161,6 @@ input[value=Register] {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-#display_image {
-    width: 144px;
-    height: 144px;
-    position: absolute;
-    margin-left: 30.2rem;
-    margin-top: 15px;
-    box-shadow: 0px 10px 30px;
 }
 
 .yearLevel select {

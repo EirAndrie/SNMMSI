@@ -88,27 +88,3 @@ function hideAlert() {
     customAlert.style.display = 'none';
 }
 
-const image_input = document.querySelector("#image");
-
-    image_input.addEventListener("change", function() {
-        const reader = new FileReader();
-        reader.addEventListener("load", () => {
-            const uploaded_image = new Image();
-            uploaded_image.src = reader.result;
-
-        uploaded_image.onload = function() {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-
-            canvas.width = 144;
-            canvas.height = 144;
-
-            ctx.drawImage(uploaded_image, 0, 0, 144, 144);
-
-            const resizedImageURL = canvas.toDataURL('image/jpeg', 0.7);
-
-            document.querySelector("#display_image").style.backgroundImage = `url(${resizedImageURL})`;
-            };
-        });
-        reader.readAsDataURL(this.files[0]);
-    });

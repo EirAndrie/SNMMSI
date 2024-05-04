@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
 }
 
 h2 {
@@ -41,19 +41,6 @@ h2 {
 
 h2 {
     color: #7b1113;
-}
-
-#display_image {
-    width: 144px;
-    height: 144px;
-    margin-top: -100px;
-    margin-left: 20rem;
-    box-shadow: 0px 10px 30px;
-    transition: transform 0.5s ease;
-}
-
-#display_image:hover {
-    transform: scale(1.05) translateY(0px);
 }
 
 .mainBody {
